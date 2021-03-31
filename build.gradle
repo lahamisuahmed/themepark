@@ -29,7 +29,7 @@ dependencies {
 }
 import com.amazonaws.services.cloudformation.model.Capability
 String dockerHubUsernameProperty = findProperty('dockerHubUsername') ?: 'hamisulawal'
-String imageName = "${dockerHubUsernameProperty}/themeparks:$version"
+String imageName = "${dockerHubUsernameProperty}/themepark:$version"
 
 docker {
     name imageName
